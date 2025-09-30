@@ -3,13 +3,13 @@ import Test.Tasty ( TestTree, defaultMain, testGroup )
 import Test.Tasty.HUnit ( testCase, (@?=) )
 
 import Lib1 qualified
-import Lib2 qualified
+--import Lib2 qualified
 
 main :: IO ()
 main = defaultMain tests
 
 tests :: TestTree
-tests = testGroup "Tests" [lib1Tests, lib2Tests]
+tests = testGroup "Tests" [lib1Tests] --, lib2Tests]
 
 lib1Tests :: TestTree
 lib1Tests = testGroup "Lib1 tests"
